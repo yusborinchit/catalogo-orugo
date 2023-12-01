@@ -1,5 +1,7 @@
 import "@/styles/globals.css";
+import { type Metadata } from "next";
 import { Fira_Sans_Condensed } from "next/font/google";
+import { type ReactNode } from "react";
 
 const fira = Fira_Sans_Condensed({
   subsets: ["latin"],
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
